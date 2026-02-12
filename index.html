@@ -4,29 +4,34 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Innocent Niyobuhungiro | Portfolio</title>
-  <meta name="description" content="Portfolio of Innocent Niyobuhungiro — AI / Software Development student. Featured project: Cinema Reservation." />
+  <meta name="description" content="Portfolio of Innocent Niyobuhungiro — AI / Software Development student. Projects: Cinema Reservation, Recommendation System." />
+  <meta name="theme-color" content="#0b0f19" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- Top glow background -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
   <header class="header">
     <div class="container header__inner">
-      <a class="logo" href="#top" aria-label="Home">
-        <span class="logo__dot"></span>
-        <span class="logo__text">Innocent</span>
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Innocent</span>
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#about" data-i18n="nav_about">About</a>
-        <a href="#projects" data-i18n="nav_projects">Projects</a>
-        <a href="#education" data-i18n="nav_education">Education</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
         <a class="nav__ghost" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
 
-      <div class="lang">
-        <button class="btn btn--small btn--ghost" id="btnEN" type="button" aria-pressed="true">EN</button>
-        <button class="btn btn--small btn--ghost" id="btnFR" type="button" aria-pressed="false">FR</button>
+      <!-- (Optional) buttons - for now they are just UI -->
+      <div class="lang" aria-label="Language switch (UI only)">
+        <button class="btn btn--ghost btn--small" type="button">EN</button>
+        <button class="btn btn--ghost btn--small" type="button">FR</button>
       </div>
     </div>
   </header>
@@ -34,163 +39,194 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__text">
-          <p class="pill" data-i18n="pill">AI / Software Development</p>
-          <h1>Innocent Niyobuhungiro</h1>
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-card__grid">
+            <!-- Left: Portrait block -->
+            <div class="hero-portrait">
+              <img class="hero-portrait__img" src="assets/img/profile.jpg" alt="Innocent Niyobuhungiro portrait">
+              <div class="hero-portrait__overlay" aria-hidden="true"></div>
+              <div class="hero-portrait__badge" aria-hidden="true">
+                <span class="badge-dot"></span>
+                <span>AI / Software Dev</span>
+              </div>
+            </div>
 
-          <p class="subtitle" data-i18n="subtitle">
-            Student building practical projects with clean documentation and strong Git/GitHub workflows.
-          </p>
+            <!-- Right: Content -->
+            <div class="hero-content">
+              <div class="hero-top">
+                <div class="hero-avatar" aria-hidden="true">
+                  <img src="assets/img/profile.jpg" alt="">
+                </div>
+                <div class="hero-top__text">
+                  <h1>Innocent Niyobuhungiro</h1>
+                  <p class="hero-subtitle">
+                    Student building practical projects with clear documentation and strong Git/GitHub workflows.
+                  </p>
+                  <p class="hero-subtitle hero-subtitle--fr">
+                    (FR) Étudiant IA / Développement logiciel — projets concrets, documentation claire.
+                  </p>
+                </div>
+              </div>
 
-          <div class="hero__cta">
-            <a class="btn" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer" data-i18n="btn_github">View GitHub</a>
-            <a class="btn btn--ghost" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer" data-i18n="btn_featured">Featured Project</a>
+              <div class="hero-meta">
+                <div class="meta">
+                  <span class="meta__label">Focus</span>
+                  <span class="meta__value">Web apps · Data/AI · Collaboration</span>
+                </div>
+                <div class="meta">
+                  <span class="meta__label">Stack</span>
+                  <span class="meta__value">Java · Python · SQL · Git/GitHub</span>
+                </div>
+              </div>
+
+              <div class="hero-actions">
+                <a class="btn" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">View GitHub</a>
+                <a class="btn btn--ghost" href="#projects">See Projects</a>
+                <a class="btn btn--ghost" href="mailto:innocentvivan18@gmail.com">Email</a>
+              </div>
+
+              <!-- Featured block -->
+              <div class="featured">
+                <div class="featured__head">
+                  <span class="tag">Featured</span>
+                  <div class="featured__title">
+                    <h2>Recommendation System</h2>
+                    <p class="muted">
+                      Restaurants & accommodations recommendation (in progress)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="featured__body">
+                  <img class="featured__thumb" src="assets/img/reco.png" alt="Recommendation illustration">
+                  <ul class="bullets">
+                    <li>Goal: recommend places based on preferences and location.</li>
+                    <li>Approach: cleaning, features, scoring/ranking, evaluation.</li>
+                    <li>Deliverable: clear README + demo examples + metrics.</li>
+                  </ul>
+                </div>
+
+                <div class="chips">
+                  <span class="chip">Data prep</span>
+                  <span class="chip">Ranking</span>
+                  <span class="chip">Evaluation</span>
+                  <span class="chip">Geo</span>
+                </div>
+
+                <div class="featured__actions">
+                  <!-- Update this link when the repo exists -->
+                  <a class="btn btn--small" href="#projects">Read more</a>
+                  <a class="btn btn--small btn--ghost" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">Open repo</a>
+                </div>
+              </div>
+
+              <div class="hero-foot">
+                <span class="muted">📍 Education: La Cité collégiale</span>
+                <span class="dot-sep" aria-hidden="true">•</span>
+                <span class="muted">✉️ innocentvivan18@gmail.com</span>
+              </div>
+            </div>
           </div>
-
-          <ul class="hero__meta">
-            <li><strong data-i18n="meta_focus_label">Focus:</strong> <span data-i18n="meta_focus_value">Web apps, data/AI, collaboration</span></li>
-            <li><strong data-i18n="meta_stack_label">Stack:</strong> Java · Python · SQL · Git/GitHub</li>
-          </ul>
         </div>
 
-        <!-- Featured card -->
-        <div class="card">
-          <div class="card__top">
-            <span class="tag" data-i18n="tag_featured">Featured</span>
-            <h2 class="card__title">Cinema Reservation</h2>
-            <p class="card__desc" data-i18n="featured_desc">
-              Full-stack cinema booking app with REST API + EJS pages, JWT auth, and client/admin roles.
-            </p>
-          </div>
-
-          <div class="chips">
-            <span class="chip">Node.js</span>
-            <span class="chip">Express</span>
-            <span class="chip">MySQL</span>
-            <span class="chip">Sequelize</span>
-            <span class="chip">EJS</span>
-            <span class="chip">JWT</span>
-          </div>
-
-          <div class="card__actions">
-            <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer" data-i18n="btn_repo">Open Repo</a>
-            <a class="btn btn--small btn--ghost" href="#projects" data-i18n="btn_read_more">Read more</a>
-          </div>
-        </div>
+        <p class="hero-note muted">
+          Tip: keep the portfolio simple, clean, and focused on 1–2 strong projects.
+        </p>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
-        <h2 data-i18n="about_title">About</h2>
-        <p class="lead" data-i18n="about_text">
-          I’m a student in AI / software development. I like building complete, real-world projects and explaining them clearly:
-          goals, approach, decisions, and results. I value teamwork practices (branches, PRs, issues, and clear READMEs).
-        </p>
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">Clear communication + good Git habits + real-world projects.</p>
+        </div>
+
+        <div class="panel">
+          <p>
+            I’m an AI / Software Development student. I focus on building projects that are complete and easy to understand:
+            context, objective, approach, decisions, and results. I also value collaboration workflows (branches, PRs, issues).
+          </p>
+          <p class="muted">
+            (FR) J’aime structurer mes projets et les documenter clairement : problème → méthode → résultats → conclusion.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section section--alt">
       <div class="container">
-        <div class="section__head">
-          <h2 data-i18n="projects_title">Projects</h2>
-          <p class="muted" data-i18n="projects_subtitle">Quality > quantity — a curated selection.</p>
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">A curated selection (quality & clarity first).</p>
         </div>
 
         <div class="grid">
-          <!-- Featured project -->
-          <article class="project">
-            <div class="project__head">
+          <!-- Recommendation -->
+          <article class="card">
+            <div class="card__head">
+              <h3>🍽️ Recommendation System</h3>
+              <p class="muted">Restaurants & accommodations — in progress</p>
+            </div>
+
+            <img class="card__thumb" src="assets/img/reco.png" alt="Recommendation illustration">
+
+            <ul class="bullets">
+              <li>Preference-based recommendations</li>
+              <li>Feature engineering + scoring</li>
+              <li>Evaluation metrics + examples</li>
+            </ul>
+
+            <div class="card__actions">
+              <a class="btn btn--small btn--ghost" href="#contact">Contact for updates</a>
+            </div>
+          </article>
+
+          <!-- Cinema Reservation -->
+          <article class="card">
+            <div class="card__head">
               <h3>🎬 Cinema Reservation</h3>
-              <p class="project__meta">Node.js · Express · MySQL · Sequelize · EJS · JWT</p>
+              <p class="muted">Full-stack booking app (REST API + EJS)</p>
             </div>
 
-            <ul class="project__bullets">
-              <li data-i18n="p1_b1">JWT authentication (register/login) + role-based access (client/admin).</li>
-              <li data-i18n="p1_b2">CRUD for movies/showtimes and booking management.</li>
-              <li data-i18n="p1_b3">Clean documentation and structured code for maintainability.</li>
+            <div class="card__mini">
+              <div class="mini-title">Highlights</div>
+              <div class="chips">
+                <span class="chip">JWT</span>
+                <span class="chip">Roles</span>
+                <span class="chip">EJS</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">Express</span>
+              </div>
+            </div>
+
+            <ul class="bullets">
+              <li>JWT authentication + client/admin roles</li>
+              <li>Movies/showtimes + booking management</li>
+              <li>Clean README & structured project</li>
             </ul>
 
-            <div class="project__links">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn btn--small btn--ghost" href="https://github.com/VivanBoy/cinema-reservation#readme" target="_blank" rel="noreferrer" data-i18n="btn_readme">README</a>
+            <div class="card__actions">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer">Open repo</a>
+              <a class="btn btn--small btn--ghost" href="https://github.com/VivanBoy/cinema-reservation#readme" target="_blank" rel="noreferrer">README</a>
             </div>
           </article>
 
-          <!-- Next project -->
-          <article class="project">
-            <div class="project__head">
-              <h3 data-i18n="next_title">🍽️ Recommendation System (Next)</h3>
-              <p class="project__meta" data-i18n="next_meta">Restaurants & accommodations — in progress</p>
-            </div>
-
-            <ul class="project__bullets">
-              <li data-i18n="next_b1">Goal: recommend places based on user preferences and location.</li>
-              <li data-i18n="next_b2">Approach: data cleaning, feature engineering, ranking/scoring.</li>
-              <li data-i18n="next_b3">Deliverable: clear README + demo examples + evaluation metrics.</li>
-            </ul>
-
-            <div class="project__links">
-              <a class="btn btn--small btn--ghost" href="#contact" data-i18n="next_cta">Contact me for updates</a>
-            </div>
-          </article>
-
-          <!-- Other repos (from your list) -->
-          <article class="project">
-            <div class="project__head">
+          <!-- Other repos -->
+          <article class="card">
+            <div class="card__head">
               <h3>📦 SmartStock</h3>
-              <p class="project__meta">Data/Forecasting · Python</p>
+              <p class="muted">Data/Forecasting project</p>
             </div>
-            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
-            <div class="project__links">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/SmartStock" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project__head">
-              <h3>🧩 project_ua2_api</h3>
-              <p class="project__meta">Python · API</p>
-            </div>
-            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
-            <div class="project__links">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/project_ua2_api" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project__head">
-              <h3>🧪 ProjetIA_mlflow_dagshub_2025</h3>
-              <p class="project__meta">ML Ops · Tracking</p>
-            </div>
-            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
-            <div class="project__links">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/ProjetIA_mlflow_dagshub_2025" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project__head">
-              <h3>🛠️ labo-outillage-github</h3>
-              <p class="project__meta">Git/GitHub · HTML</p>
-            </div>
-            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
-            <div class="project__links">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/labo-outillage-github" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project__head">
-              <h3>🧾 ExamenGit-C</h3>
-              <p class="project__meta">Git · Course</p>
-            </div>
-            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
-            <div class="project__links">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/ExamenGit-C" target="_blank" rel="noreferrer">GitHub</a>
+            <ul class="bullets">
+              <li>Time series / forecasting experiments</li>
+              <li>Clear structure for coursework deliverables</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/SmartStock" target="_blank" rel="noreferrer">Open repo</a>
             </div>
           </article>
         </div>
@@ -200,13 +236,14 @@
     <!-- EDUCATION -->
     <section id="education" class="section">
       <div class="container">
-        <h2 data-i18n="edu_title">Education</h2>
+        <div class="section-head">
+          <h2>Education</h2>
+          <p class="muted">Where I study and what I focus on.</p>
+        </div>
 
-        <div class="edu">
-          <div class="edu__card">
-            <h3>La Cité collégiale</h3>
-            <p class="muted" data-i18n="edu_text">Student — AI / Software-related studies (portfolio-focused projects).</p>
-          </div>
+        <div class="panel">
+          <h3 class="panel__title">La Cité collégiale</h3>
+          <p class="muted">Student — AI / Software-related studies</p>
         </div>
       </div>
     </section>
@@ -214,8 +251,10 @@
     <!-- CONTACT -->
     <section id="contact" class="section section--alt">
       <div class="container">
-        <h2 data-i18n="contact_title">Contact</h2>
-        <p class="lead" data-i18n="contact_text">Email is the fastest way to reach me.</p>
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Fastest: email or GitHub.</p>
+        </div>
 
         <div class="contact">
           <a class="btn" href="mailto:innocentvivan18@gmail.com">innocentvivan18@gmail.com</a>
@@ -227,11 +266,13 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> Innocent Niyobuhungiro</p>
+      <p class="muted">© <span id="year"></span> Innocent Niyobuhungiro</p>
       <p class="muted">Built with GitHub Pages</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
