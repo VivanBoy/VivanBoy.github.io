@@ -7,6 +7,7 @@
   <meta name="description" content="Portfolio of Innocent Niyobuhungiro — AI / Software Development student. Featured project: Cinema Reservation." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header__inner">
@@ -18,9 +19,9 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="#about" data-i18n="nav_about">About</a>
         <a href="#projects" data-i18n="nav_projects">Projects</a>
-        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
-        <a class="nav__link--ghost" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="nav__ghost" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
 
       <div class="lang">
@@ -37,8 +38,9 @@
         <div class="hero__text">
           <p class="pill" data-i18n="pill">AI / Software Development</p>
           <h1>Innocent Niyobuhungiro</h1>
+
           <p class="subtitle" data-i18n="subtitle">
-            Student building practical projects with clear documentation and strong Git/GitHub workflows.
+            Student building practical projects with clean documentation and strong Git/GitHub workflows.
           </p>
 
           <div class="hero__cta">
@@ -52,29 +54,28 @@
           </ul>
         </div>
 
-        <div class="hero__card" aria-label="Featured project card">
-          <div class="card">
-            <div class="card__top">
-              <p class="card__tag" data-i18n="featured_tag">Featured</p>
-              <h2 class="card__title">Cinema Reservation</h2>
-              <p class="card__desc" data-i18n="featured_desc">
-                Full-stack cinema booking app with REST API + EJS pages, JWT auth, and client/admin roles.
-              </p>
-            </div>
+        <!-- Featured card -->
+        <div class="card">
+          <div class="card__top">
+            <span class="tag" data-i18n="tag_featured">Featured</span>
+            <h2 class="card__title">Cinema Reservation</h2>
+            <p class="card__desc" data-i18n="featured_desc">
+              Full-stack cinema booking app with REST API + EJS pages, JWT auth, and client/admin roles.
+            </p>
+          </div>
 
-            <div class="card__chips">
-              <span class="chip">Node.js</span>
-              <span class="chip">Express</span>
-              <span class="chip">MySQL</span>
-              <span class="chip">Sequelize</span>
-              <span class="chip">EJS</span>
-              <span class="chip">JWT</span>
-            </div>
+          <div class="chips">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Sequelize</span>
+            <span class="chip">EJS</span>
+            <span class="chip">JWT</span>
+          </div>
 
-            <div class="card__actions">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer" data-i18n="btn_repo">Open Repo</a>
-              <a class="btn btn--small btn--ghost" href="#projects" data-i18n="btn_read_more">Read more</a>
-            </div>
+          <div class="card__actions">
+            <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer" data-i18n="btn_repo">Open Repo</a>
+            <a class="btn btn--small btn--ghost" href="#projects" data-i18n="btn_read_more">Read more</a>
           </div>
         </div>
       </div>
@@ -86,7 +87,7 @@
         <h2 data-i18n="about_title">About</h2>
         <p class="lead" data-i18n="about_text">
           I’m a student in AI / software development. I like building complete, real-world projects and explaining them clearly:
-          goals, approach, decisions, and results. I also value teamwork practices (branches, PRs, issues, and clean READMEs).
+          goals, approach, decisions, and results. I value teamwork practices (branches, PRs, issues, and clear READMEs).
         </p>
       </div>
     </section>
@@ -96,20 +97,20 @@
       <div class="container">
         <div class="section__head">
           <h2 data-i18n="projects_title">Projects</h2>
-          <p class="muted" data-i18n="projects_subtitle">A curated selection (quality > quantity).</p>
+          <p class="muted" data-i18n="projects_subtitle">Quality > quantity — a curated selection.</p>
         </div>
 
         <div class="grid">
           <!-- Featured project -->
           <article class="project">
-            <div class="project__header">
+            <div class="project__head">
               <h3>🎬 Cinema Reservation</h3>
               <p class="project__meta">Node.js · Express · MySQL · Sequelize · EJS · JWT</p>
             </div>
 
             <ul class="project__bullets">
               <li data-i18n="p1_b1">JWT authentication (register/login) + role-based access (client/admin).</li>
-              <li data-i18n="p1_b2">CRUD for movies and showtimes + booking management.</li>
+              <li data-i18n="p1_b2">CRUD for movies/showtimes and booking management.</li>
               <li data-i18n="p1_b3">Clean documentation and structured code for maintainability.</li>
             </ul>
 
@@ -119,51 +120,92 @@
             </div>
           </article>
 
-          <!-- Placeholders (edit later) -->
-          <article class="project project--placeholder">
-            <div class="project__header">
-              <h3 data-i18n="p2_title">📌 Next Project</h3>
-              <p class="project__meta" data-i18n="p2_meta">Coming soon</p>
+          <!-- Next project -->
+          <article class="project">
+            <div class="project__head">
+              <h3 data-i18n="next_title">🍽️ Recommendation System (Next)</h3>
+              <p class="project__meta" data-i18n="next_meta">Restaurants & accommodations — in progress</p>
             </div>
-            <p class="muted" data-i18n="p2_text">
-              Add another strong project here (with a clear README and screenshots).
-            </p>
+
+            <ul class="project__bullets">
+              <li data-i18n="next_b1">Goal: recommend places based on user preferences and location.</li>
+              <li data-i18n="next_b2">Approach: data cleaning, feature engineering, ranking/scoring.</li>
+              <li data-i18n="next_b3">Deliverable: clear README + demo examples + evaluation metrics.</li>
+            </ul>
+
+            <div class="project__links">
+              <a class="btn btn--small btn--ghost" href="#contact" data-i18n="next_cta">Contact me for updates</a>
+            </div>
           </article>
 
-          <article class="project project--placeholder">
-            <div class="project__header">
-              <h3 data-i18n="p3_title">📌 Next Project</h3>
-              <p class="project__meta" data-i18n="p3_meta">Coming soon</p>
+          <!-- Other repos (from your list) -->
+          <article class="project">
+            <div class="project__head">
+              <h3>📦 SmartStock</h3>
+              <p class="project__meta">Data/Forecasting · Python</p>
             </div>
-            <p class="muted" data-i18n="p3_text">
-              Keep it simple: problem → approach → results → learnings.
-            </p>
+            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/SmartStock" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>🧩 project_ua2_api</h3>
+              <p class="project__meta">Python · API</p>
+            </div>
+            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/project_ua2_api" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>🧪 ProjetIA_mlflow_dagshub_2025</h3>
+              <p class="project__meta">ML Ops · Tracking</p>
+            </div>
+            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/ProjetIA_mlflow_dagshub_2025" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>🛠️ labo-outillage-github</h3>
+              <p class="project__meta">Git/GitHub · HTML</p>
+            </div>
+            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/labo-outillage-github" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>🧾 ExamenGit-C</h3>
+              <p class="project__meta">Git · Course</p>
+            </div>
+            <p class="muted" data-i18n="other_text">Other coursework/project repository.</p>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/ExamenGit-C" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
+    <!-- EDUCATION -->
+    <section id="education" class="section">
       <div class="container">
-        <h2 data-i18n="skills_title">Skills</h2>
+        <h2 data-i18n="edu_title">Education</h2>
 
-        <div class="skills">
-          <div class="skill">
-            <h3 data-i18n="skills_lang">Languages</h3>
-            <p>Java · Python · SQL · JavaScript</p>
-          </div>
-          <div class="skill">
-            <h3 data-i18n="skills_tools">Tools</h3>
-            <p>Git/GitHub · VS Code · Postman</p>
-          </div>
-          <div class="skill">
-            <h3 data-i18n="skills_db">Databases</h3>
-            <p>MySQL · PostgreSQL</p>
-          </div>
-          <div class="skill">
-            <h3 data-i18n="skills_focus">Focus</h3>
-            <p data-i18n="skills_focus_text">Documentation · Collaboration · Real-world projects</p>
+        <div class="edu">
+          <div class="edu__card">
+            <h3>La Cité collégiale</h3>
+            <p class="muted" data-i18n="edu_text">Student — AI / Software-related studies (portfolio-focused projects).</p>
           </div>
         </div>
       </div>
@@ -173,12 +215,11 @@
     <section id="contact" class="section section--alt">
       <div class="container">
         <h2 data-i18n="contact_title">Contact</h2>
-        <p class="lead" data-i18n="contact_text">
-          The easiest way to reach me is via GitHub.
-        </p>
+        <p class="lead" data-i18n="contact_text">Email is the fastest way to reach me.</p>
 
-        <div class="contact__links">
-          <a class="btn" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="contact">
+          <a class="btn" href="mailto:innocentvivan18@gmail.com">innocentvivan18@gmail.com</a>
+          <a class="btn btn--ghost" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </section>
