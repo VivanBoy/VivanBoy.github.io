@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Innocent Niyobuhungiro | Portfolio</title>
+  <meta name="description" content="Portfolio of Innocent Niyobuhungiro — AI / Software Development student. Featured project: Cinema Reservation." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Home">
+        <span class="logo__dot"></span>
+        <span class="logo__text">Innocent</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a class="nav__link--ghost" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+
+      <div class="lang">
+        <button class="btn btn--small btn--ghost" id="btnEN" type="button" aria-pressed="true">EN</button>
+        <button class="btn btn--small btn--ghost" id="btnFR" type="button" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="pill" data-i18n="pill">AI / Software Development</p>
+          <h1>Innocent Niyobuhungiro</h1>
+          <p class="subtitle" data-i18n="subtitle">
+            Student building practical projects with clear documentation and strong Git/GitHub workflows.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer" data-i18n="btn_github">View GitHub</a>
+            <a class="btn btn--ghost" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer" data-i18n="btn_featured">Featured Project</a>
+          </div>
+
+          <ul class="hero__meta">
+            <li><strong data-i18n="meta_focus_label">Focus:</strong> <span data-i18n="meta_focus_value">Web apps, data/AI, collaboration</span></li>
+            <li><strong data-i18n="meta_stack_label">Stack:</strong> Java · Python · SQL · Git/GitHub</li>
+          </ul>
+        </div>
+
+        <div class="hero__card" aria-label="Featured project card">
+          <div class="card">
+            <div class="card__top">
+              <p class="card__tag" data-i18n="featured_tag">Featured</p>
+              <h2 class="card__title">Cinema Reservation</h2>
+              <p class="card__desc" data-i18n="featured_desc">
+                Full-stack cinema booking app with REST API + EJS pages, JWT auth, and client/admin roles.
+              </p>
+            </div>
+
+            <div class="card__chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">Express</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Sequelize</span>
+              <span class="chip">EJS</span>
+              <span class="chip">JWT</span>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer" data-i18n="btn_repo">Open Repo</a>
+              <a class="btn btn--small btn--ghost" href="#projects" data-i18n="btn_read_more">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 data-i18n="about_title">About</h2>
+        <p class="lead" data-i18n="about_text">
+          I’m a student in AI / software development. I like building complete, real-world projects and explaining them clearly:
+          goals, approach, decisions, and results. I also value teamwork practices (branches, PRs, issues, and clean READMEs).
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="projects_title">Projects</h2>
+          <p class="muted" data-i18n="projects_subtitle">A curated selection (quality > quantity).</p>
+        </div>
+
+        <div class="grid">
+          <!-- Featured project -->
+          <article class="project">
+            <div class="project__header">
+              <h3>🎬 Cinema Reservation</h3>
+              <p class="project__meta">Node.js · Express · MySQL · Sequelize · EJS · JWT</p>
+            </div>
+
+            <ul class="project__bullets">
+              <li data-i18n="p1_b1">JWT authentication (register/login) + role-based access (client/admin).</li>
+              <li data-i18n="p1_b2">CRUD for movies and showtimes + booking management.</li>
+              <li data-i18n="p1_b3">Clean documentation and structured code for maintainability.</li>
+            </ul>
+
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn--small btn--ghost" href="https://github.com/VivanBoy/cinema-reservation#readme" target="_blank" rel="noreferrer" data-i18n="btn_readme">README</a>
+            </div>
+          </article>
+
+          <!-- Placeholders (edit later) -->
+          <article class="project project--placeholder">
+            <div class="project__header">
+              <h3 data-i18n="p2_title">📌 Next Project</h3>
+              <p class="project__meta" data-i18n="p2_meta">Coming soon</p>
+            </div>
+            <p class="muted" data-i18n="p2_text">
+              Add another strong project here (with a clear README and screenshots).
+            </p>
+          </article>
+
+          <article class="project project--placeholder">
+            <div class="project__header">
+              <h3 data-i18n="p3_title">📌 Next Project</h3>
+              <p class="project__meta" data-i18n="p3_meta">Coming soon</p>
+            </div>
+            <p class="muted" data-i18n="p3_text">
+              Keep it simple: problem → approach → results → learnings.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 data-i18n="skills_title">Skills</h2>
+
+        <div class="skills">
+          <div class="skill">
+            <h3 data-i18n="skills_lang">Languages</h3>
+            <p>Java · Python · SQL · JavaScript</p>
+          </div>
+          <div class="skill">
+            <h3 data-i18n="skills_tools">Tools</h3>
+            <p>Git/GitHub · VS Code · Postman</p>
+          </div>
+          <div class="skill">
+            <h3 data-i18n="skills_db">Databases</h3>
+            <p>MySQL · PostgreSQL</p>
+          </div>
+          <div class="skill">
+            <h3 data-i18n="skills_focus">Focus</h3>
+            <p data-i18n="skills_focus_text">Documentation · Collaboration · Real-world projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2 data-i18n="contact_title">Contact</h2>
+        <p class="lead" data-i18n="contact_text">
+          The easiest way to reach me is via GitHub.
+        </p>
+
+        <div class="contact__links">
+          <a class="btn" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Innocent Niyobuhungiro</p>
+      <p class="muted">Built with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
