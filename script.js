@@ -7,16 +7,16 @@ const EN = {
   nav_journey: "Journey",
   nav_contact: "Contact",
 
-  hero_kicker: "Student at UQO · Gatineau / Ottawa",
+  hero_kicker: "B.Sc. Computer Science · UQO · Gatineau",
   hero_role: "Artificial Intelligence · Software Development",
   hero_lead:
-    "Graduate of the <strong>Artificial Intelligence program at La Cité collégiale</strong>, now continuing my studies at the <strong>Université du Québec en Outaouais (UQO)</strong>. I build end-to-end AI solutions: data, models, LLM assistants, APIs and web interfaces.",
+    "Graduate of the <strong>Artificial Intelligence program at La Cité collégiale</strong>, now pursuing a Bachelor of Computer Science (Data Science &amp; AI concentration) at the <strong>Université du Québec en Outaouais (UQO)</strong>. I build end-to-end AI solutions: data, models, LLM assistants, APIs and web interfaces.",
   btn_projects: "See my projects",
   btn_email: "Get in touch",
   stat_projects: "documented projects on GitHub",
   stat_llm: "LLM assistants running locally",
   stat_acc: "accuracy on voice command recognition (GRU)",
-  portrait_tag: "Currently studying · 2026",
+  portrait_tag: "B.Sc. Computer Science · AI",
 
   projects_title: "Projects",
   projects_sub: "A selection of team and solo projects — from data prototype to deployment.",
@@ -88,9 +88,9 @@ const EN = {
   journey_sub: "Education and key milestones.",
   tl_uqo_when: "2026 — present",
   badge_now: "In progress",
-  tl_uqo_prog: "University studies · Gatineau",
+  tl_uqo_prog: "Bachelor of Computer Science — Data Science &amp; Artificial Intelligence concentration · Gatineau",
   tl_uqo_p:
-    "Continuing at university to deepen the theoretical foundations of computer science and AI, building on the hands-on experience gained in college.",
+    "Deepening the foundations of computer science (algorithms, mathematics, software engineering) and specializing in data science and artificial intelligence, building on the hands-on experience gained in college.",
   tl_cite_when: "Graduated · 2026",
   badge_done: "Completed",
   tl_cite_prog: "Artificial Intelligence program · Ottawa",

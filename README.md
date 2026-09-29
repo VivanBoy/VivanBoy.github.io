@@ -1,6 +1,6 @@
 # VivanBoy.github.io
 
-Portfolio personnel d'**Innocent Niyobuhungiro** — étudiant à l'UQO, diplômé du programme en intelligence artificielle de La Cité collégiale.
+Portfolio personnel d'**Innocent Niyobuhungiro** — étudiant au baccalauréat en informatique (concentration sciences des données et IA) à l'UQO, diplômé du programme en intelligence artificielle de La Cité collégiale.
 
 Site : https://vivanboy.github.io
 
