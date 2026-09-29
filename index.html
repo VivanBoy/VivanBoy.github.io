@@ -1,257 +1,340 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Innocent Niyobuhungiro | Portfolio</title>
-  <meta name="description" content="Portfolio of Innocent Niyobuhungiro — AI / Software Development student. Featured project: Cinema Reservation." />
-  <meta name="theme-color" content="#0b0f19" />
+  <title>Innocent Niyobuhungiro — Portfolio IA</title>
+  <meta name="description" content="Portfolio d'Innocent Niyobuhungiro — étudiant à l'UQO, diplômé en intelligence artificielle de La Cité. Projets : CityTaste, assistant RAG, reconnaissance vocale, prévision de la demande, API ML." />
+  <meta property="og:title" content="Innocent Niyobuhungiro — Portfolio IA" />
+  <meta property="og:description" content="Étudiant à l'UQO · Diplômé en IA de La Cité. Assistants LLM, RAG, deep learning, MLOps et applications web." />
+  <meta property="og:image" content="https://vivanboy.github.io/assets/img/profile_400.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0d0e12" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
   <script defer src="script.js"></script>
 </head>
 
 <body>
-  <div class="bg-glow" aria-hidden="true"></div>
+  <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
 
   <header class="header">
     <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand__dot"></span>
-        <span class="brand__text">Innocent</span>
+      <a class="brand" href="#top" aria-label="Accueil">
+        <span class="brand__mark">IN</span>
+        <span class="brand__text">Innocent N.</span>
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#about" data-i18n="nav_about">About</a>
-        <a href="#projects" data-i18n="nav_projects">Projects</a>
-        <a href="#education" data-i18n="nav_education">Education</a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#projects" data-i18n="nav_projects">Projets</a>
+        <a href="#skills" data-i18n="nav_skills">Compétences</a>
+        <a href="#journey" data-i18n="nav_journey">Parcours</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
-        <a class="nav__ghost" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
 
-      <div class="lang" aria-label="Language switch">
-        <button id="btnEN" class="btn btn--ghost btn--small btn--active" type="button" aria-pressed="true">EN</button>
-        <button id="btnFR" class="btn btn--ghost btn--small" type="button" aria-pressed="false">FR</button>
+      <div class="header__tools">
+        <div class="seg" role="group" aria-label="Langue / Language">
+          <button id="btnFR" class="seg__btn is-active" type="button" aria-pressed="true">FR</button>
+          <button id="btnEN" class="seg__btn" type="button" aria-pressed="false">EN</button>
+        </div>
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Changer le thème">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="menuToggle" class="icon-btn menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
     <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-card">
-          <div class="hero-card__grid">
-            <!-- Left: Portrait block -->
-            <div class="hero-portrait">
-              <img class="hero-portrait__img" src="assets/img/profile.png" alt="Innocent Niyobuhungiro portrait">
-              <div class="hero-portrait__overlay" aria-hidden="true"></div>
-              <div class="hero-portrait__badge" aria-hidden="true">
-                <span class="badge-dot"></span>
-                <span data-i18n="hero_badge">AI / Software Dev</span>
-              </div>
-            </div>
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="kicker"><span class="pulse" aria-hidden="true"></span><span data-i18n="hero_kicker">Étudiant à l'UQO · Gatineau / Ottawa</span></p>
+          <h1 class="hero__title">Innocent<br />Niyobuhungiro</h1>
+          <p class="hero__role" data-i18n="hero_role">Intelligence artificielle · Développement logiciel</p>
+          <p class="hero__lead" data-i18n="hero_lead">
+            Diplômé du programme en <strong>intelligence artificielle de La Cité collégiale</strong>, je poursuis maintenant mes études à
+            l'<strong>Université du Québec en Outaouais (UQO)</strong>. Je conçois des solutions IA de bout en bout&nbsp;: données,
+            modèles, assistants LLM, API et interfaces web.
+          </p>
 
-            <!-- Right: Content -->
-            <div class="hero-content">
-              <div class="hero-top">
-                <div class="hero-avatar" aria-hidden="true">
-                  <img src="assets/img/profile_400.jpg" alt="">
-                </div>
-                <div class="hero-top__text">
-                  <h1>Innocent Niyobuhungiro</h1>
-                  <p class="hero-subtitle" data-i18n="hero_subtitle">
-                    Student building practical projects with clear documentation and strong Git/GitHub workflows.
-                  </p>
-                </div>
-              </div>
-
-              <div class="hero-meta">
-                <div class="meta">
-                  <span class="meta__label" data-i18n="meta_focus_label">Focus</span>
-                  <span class="meta__value" data-i18n="meta_focus_value">Web apps · Data/AI · Collaboration</span>
-                </div>
-                <div class="meta">
-                  <span class="meta__label" data-i18n="meta_stack_label">Stack</span>
-                  <span class="meta__value">Java · Python · SQL · Git/GitHub</span>
-                </div>
-              </div>
-
-              <div class="hero-actions">
-                <a class="btn" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer" data-i18n="btn_github">View GitHub</a>
-                <a class="btn btn--ghost" href="#projects" data-i18n="btn_projects">See Projects</a>
-                <a class="btn btn--ghost" href="mailto:innocentvivan18@gmail.com" data-i18n="btn_email">Email</a>
-              </div>
-
-              <!-- Featured block (NOW: Cinema Reservation) -->
-              <div class="featured">
-                <div class="featured__head">
-                  <span class="tag" data-i18n="tag_featured">Featured</span>
-                  <div class="featured__title">
-                    <h2>🎬 Cinema Reservation</h2>
-                    <p class="muted" data-i18n="featured_cinema_sub">
-                      Full-stack booking app (REST API + EJS) with JWT auth and client/admin roles.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="featured__body featured__body--onecol">
-                  <ul class="bullets">
-                    <li data-i18n="cinema_b1">JWT authentication + role-based access (client/admin).</li>
-                    <li data-i18n="cinema_b2">CRUD movies/showtimes + booking management.</li>
-                    <li data-i18n="cinema_b3">Clean README + structured project for maintainability.</li>
-                  </ul>
-                </div>
-
-                <div class="chips">
-                  <span class="chip">Node.js</span>
-                  <span class="chip">Express</span>
-                  <span class="chip">MySQL</span>
-                  <span class="chip">Sequelize</span>
-                  <span class="chip">EJS</span>
-                  <span class="chip">JWT</span>
-                </div>
-
-                <div class="featured__actions">
-                  <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer" data-i18n="btn_open_repo">Open repo</a>
-                  <a class="btn btn--small btn--ghost" href="https://github.com/VivanBoy/cinema-reservation#readme" target="_blank" rel="noreferrer" data-i18n="btn_readme">README</a>
-                </div>
-              </div>
-
-              <div class="hero-foot">
-                <span class="muted" data-i18n="edu_line">📍 Education: La Cité collégiale</span>
-                <span class="dot-sep" aria-hidden="true">•</span>
-                <span class="muted">✉️ innocentvivan18@gmail.com</span>
-              </div>
-            </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects" data-i18n="btn_projects">Voir mes projets</a>
+            <a class="btn" href="https://github.com/VivanBoy" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="btn btn--ghost" href="mailto:innocentvivan18@gmail.com" data-i18n="btn_email">Me contacter</a>
           </div>
+
+          <dl class="stats">
+            <div class="stat">
+              <dt class="stat__num">6</dt>
+              <dd data-i18n="stat_projects">projets documentés sur GitHub</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__num">2</dt>
+              <dd data-i18n="stat_llm">assistants LLM exécutés en local</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__num">~91&nbsp;%</dt>
+              <dd data-i18n="stat_acc">précision en reconnaissance vocale (GRU)</dd>
+            </div>
+          </dl>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2 data-i18n="about_title">About</h2>
-          <p class="muted" data-i18n="about_sub">Clear communication + good Git habits + real-world projects.</p>
-        </div>
-
-        <div class="panel">
-          <p data-i18n="about_p1">
-            I’m an AI / Software Development student. I focus on building projects that are complete and easy to understand:
-            context, objective, approach, decisions, and results. I also value collaboration workflows (branches, PRs, issues).
-          </p>
-          <p class="muted" data-i18n="about_p2">
-            I like structured documentation: problem → method → results → conclusion.
-          </p>
-        </div>
+        <figure class="portrait">
+          <img src="assets/img/profile.png" width="764" height="1156" alt="Portrait d'Innocent Niyobuhungiro" />
+          <figcaption class="portrait__tag">
+            <span class="mono">UQO</span>
+            <span data-i18n="portrait_tag">Études en cours · 2026</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section section--alt">
+    <section class="section" id="projects">
       <div class="container">
-        <div class="section-head">
-          <h2 data-i18n="projects_title">Projects</h2>
-          <p class="muted" data-i18n="projects_sub">A curated selection (quality & clarity first).</p>
+        <header class="section__head">
+          <p class="eyebrow">01</p>
+          <h2 data-i18n="projects_title">Projets</h2>
+          <p class="section__sub" data-i18n="projects_sub">Une sélection de projets réalisés en équipe et en solo — du prototype de données jusqu'au déploiement.</p>
+        </header>
+
+        <!-- Featured: CityTaste -->
+        <article class="featured">
+          <div class="featured__media">
+            <img src="assets/img/citytaste.jpg" width="1200" height="805" alt="Illustration de CityTaste : carte avec des repères de restaurants et d'hébergements" loading="lazy" />
+          </div>
+          <div class="featured__body">
+            <div class="featured__tags">
+              <span class="badge badge--accent" data-i18n="badge_capstone">Projet de fin d'études</span>
+              <span class="badge">2026</span>
+            </div>
+            <h3>CityTaste</h3>
+            <p class="featured__lead" data-i18n="ct_lead">
+              Plateforme de recommandation de restaurants et d'hébergements à Ottawa, avec un assistant IA qui guide l'utilisateur.
+            </p>
+            <ul class="list">
+              <li data-i18n="ct_b1">Pipeline de données (nettoyage, enrichissement, EDA) versionné avec <strong>DVC</strong>.</li>
+              <li data-i18n="ct_b2">Moteur de recommandation et API <strong>FastAPI</strong>, interface web en HTML/CSS/JS.</li>
+              <li data-i18n="ct_b3">Assistant conversationnel avec <strong>RAG</strong> sur la documentation du site et LLM local via <strong>Ollama</strong>.</li>
+              <li data-i18n="ct_b4">Banc d'essai de modèles (Gemma&nbsp;3 4B, Qwen&nbsp;3 4B, llama.cpp) pour choisir le meilleur compromis qualité/latence.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Ollama</span><span class="chip">RAG</span><span class="chip">DVC</span><span class="chip">Docker</span><span class="chip">JavaScript</span>
+            </div>
+            <p class="note" data-i18n="ct_team">Réalisé en équipe avec Japhet Bonheur Beda Valeria · La Cité collégiale</p>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--sm" href="https://github.com/VivanBoy/CITYTASTE" target="_blank" rel="noopener" data-i18n="btn_repo">Voir le code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="filters" role="group" aria-label="Filtrer les projets">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true" data-i18n="f_all">Tous</button>
+          <button class="filter" type="button" data-filter="llm" aria-pressed="false" data-i18n="f_llm">IA générative &amp; NLP</button>
+          <button class="filter" type="button" data-filter="ml" aria-pressed="false" data-i18n="f_ml">ML &amp; Deep learning</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false" data-i18n="f_web">Web, API &amp; déploiement</button>
         </div>
 
-        <div class="grid">
-          <!-- Cinema Reservation (Featured) -->
-          <article class="card">
-            <div class="card__head">
-              <h3>🎬 Cinema Reservation <span class="mini-tag" data-i18n="mini_featured">Featured</span></h3>
-              <p class="muted" data-i18n="cinema_card_sub">Full-stack booking app (REST API + EJS)</p>
+        <div class="grid" id="projectGrid">
+          <!-- Assistant RAG -->
+          <article class="card" data-cat="llm">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 5h16v10H9l-5 4V5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <span class="card__cat" data-i18n="cat_llm">IA générative</span>
             </div>
-
-            <div class="card__mini">
-              <div class="mini-title" data-i18n="highlights">Highlights</div>
-              <div class="chips">
-                <span class="chip">JWT</span>
-                <span class="chip">Roles</span>
-                <span class="chip">EJS</span>
-                <span class="chip">MySQL</span>
-                <span class="chip">Express</span>
-              </div>
-            </div>
-
-            <ul class="bullets">
-              <li data-i18n="cinema_b1">JWT authentication + role-based access (client/admin).</li>
-              <li data-i18n="cinema_b2">CRUD movies/showtimes + booking management.</li>
-              <li data-i18n="cinema_b3">Clean README + structured project for maintainability.</li>
+            <h3>Assistant RAG — Hôtel</h3>
+            <p class="card__desc" data-i18n="rag_desc">Assistant pour le personnel d'un hôtel d'Ottawa qui répond à partir des documents internes (politiques, procédures, convention collective).</p>
+            <ul class="list list--sm">
+              <li data-i18n="rag_b1">Index <strong>FAISS</strong> + embeddings MiniLM, génération avec <strong>Llama&nbsp;3.2 3B</strong> quantifié (GGUF).</li>
+              <li data-i18n="rag_b2">Fine-tuning <strong>QLoRA</strong> de Qwen2.5 pour reproduire le ton de l'hôtel, comparé au RAG.</li>
+              <li data-i18n="rag_b3">Analyse NLP des avis clients et démo <strong>Gradio</strong>.</li>
             </ul>
-
-            <div class="card__actions">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noreferrer" data-i18n="btn_open_repo">Open repo</a>
-              <a class="btn btn--small btn--ghost" href="https://github.com/VivanBoy/cinema-reservation#readme" target="_blank" rel="noreferrer" data-i18n="btn_readme">README</a>
-            </div>
+            <div class="chips chips--sm"><span class="chip">FAISS</span><span class="chip">llama.cpp</span><span class="chip">QLoRA</span><span class="chip">Gradio</span></div>
+            <a class="card__link" href="https://github.com/VivanBoy/assistant-rag" target="_blank" rel="noopener"><span data-i18n="btn_repo_short">Code</span> ↗</a>
           </article>
 
-          <!-- Recommendation (In progress) -->
-          <article class="card">
-            <div class="card__head">
-              <h3>🍽️ Recommendation System <span class="mini-tag mini-tag--soft" data-i18n="mini_wip">In progress</span></h3>
-              <p class="muted" data-i18n="reco_card_sub">Restaurants & accommodations recommendation</p>
+          <!-- Voice commands -->
+          <article class="card" data-cat="ml">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 12h2M8 8v8M12 5v14M16 8v8M20 11v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <span class="card__cat" data-i18n="cat_dl">Deep learning</span>
             </div>
-
-            <img class="card__thumb" src="assets/img/reco.png" alt="Recommendation illustration">
-
-            <ul class="bullets">
-              <li data-i18n="reco_b1">Goal: recommend places based on preferences and location.</li>
-              <li data-i18n="reco_b2">Approach: cleaning, features, scoring/ranking, evaluation.</li>
-              <li data-i18n="reco_b3">Deliverable: README + demo examples + metrics.</li>
+            <h3 data-i18n="voice_title">Commandes vocales — GRU</h3>
+            <p class="card__desc" data-i18n="voice_desc">Reconnaissance de mots-clés (yes, no, up, down, go, stop…) sur le Google Speech Commands Dataset.</p>
+            <ul class="list list--sm">
+              <li data-i18n="voice_b1">Pipeline audio → <strong>MFCC</strong> (40 coef.) → réseau <strong>GRU</strong>, 12 classes.</li>
+              <li data-i18n="voice_b2"><strong>~91&nbsp;%</strong> de précision sur le jeu de test.</li>
+              <li data-i18n="voice_b3">Démos : Gradio (micro) et une tortue Python pilotée à la voix.</li>
             </ul>
-
-            <div class="card__actions">
-              <a class="btn btn--small btn--ghost" href="#contact" data-i18n="btn_contact_updates">Contact for updates</a>
-            </div>
+            <div class="chips chips--sm"><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">librosa</span><span class="chip">Gradio</span></div>
+            <a class="card__link" href="https://github.com/VivanBoy/voice-commands-gru" target="_blank" rel="noopener"><span data-i18n="btn_repo_short">Code</span> ↗</a>
           </article>
 
-          <!-- Other repos -->
-          <article class="card">
-            <div class="card__head">
-              <h3>📦 SmartStock</h3>
-              <p class="muted" data-i18n="smartstock_sub">Data/Forecasting project</p>
+          <!-- SmartStock -->
+          <article class="card card--media" data-cat="ml">
+            <img class="card__thumb" src="assets/img/smartstock.jpg" width="1200" height="578" alt="Tableau de bord Streamlit de SmartStock" loading="lazy" />
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 19V5M4 19h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="m7 15 4-4 3 2 5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="card__cat" data-i18n="cat_ts">Séries temporelles</span>
             </div>
-            <ul class="bullets">
-              <li data-i18n="smartstock_b1">Time series / forecasting experiments</li>
-              <li data-i18n="smartstock_b2">Clear structure for coursework deliverables</li>
+            <h3>SmartStock</h3>
+            <p class="card__desc" data-i18n="ss_desc">Prévision de la demande d'une épicerie et optimisation du réapprovisionnement.</p>
+            <ul class="list list--sm">
+              <li data-i18n="ss_b1">7 modèles <strong>LightGBM</strong> (horizon 1 à 7 jours), MAE ≈ 7 unités.</li>
+              <li data-i18n="ss_b2">Simulation de stock (point de commande, stock de sécurité) : niveau de service ≈ 0,97.</li>
+              <li data-i18n="ss_b3">Tableau de bord <strong>Streamlit</strong>.</li>
             </ul>
-            <div class="card__actions">
-              <a class="btn btn--small" href="https://github.com/VivanBoy/SmartStock" target="_blank" rel="noreferrer" data-i18n="btn_open_repo">Open repo</a>
-            </div>
+            <div class="chips chips--sm"><span class="chip">LightGBM</span><span class="chip">pandas</span><span class="chip">Streamlit</span></div>
+            <a class="card__link" href="https://github.com/VivanBoy/SmartStock" target="_blank" rel="noopener"><span data-i18n="btn_repo_short">Code</span> ↗</a>
           </article>
+
+          <!-- Diabetes API -->
+          <article class="card" data-cat="web ml">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M7 18a4 4 0 0 1-.6-8A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9H7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="card__cat" data-i18n="cat_mlops">MLOps</span>
+            </div>
+            <h3 data-i18n="api_title">API de prédiction — Diabète</h3>
+            <p class="card__desc" data-i18n="api_desc">Mise en production d'un modèle de classification (Gradient Boosting) derrière une API REST.</p>
+            <ul class="list list--sm">
+              <li data-i18n="api_b1">API <strong>FastAPI</strong> : /predict, /health, /ready, documentation Swagger.</li>
+              <li data-i18n="api_b2">Conteneurisée avec <strong>Docker</strong> et déployée sur <strong>Google Cloud Run</strong>.</li>
+              <li data-i18n="api_b3">Ingénierie des variables côté API + journal des requêtes.</li>
+            </ul>
+            <div class="chips chips--sm"><span class="chip">scikit-learn</span><span class="chip">FastAPI</span><span class="chip">Docker</span><span class="chip">GCP</span></div>
+            <a class="card__link" href="https://github.com/VivanBoy/project_ua2_api" target="_blank" rel="noopener"><span data-i18n="btn_repo_short">Code</span> ↗</a>
+          </article>
+
+          <!-- Cinema -->
+          <article class="card" data-cat="web">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><rect x="3.5" y="6" width="17" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 10h17M8 6v4M12 6v4M16 6v4" stroke="currentColor" stroke-width="1.7"/></svg>
+              </span>
+              <span class="card__cat" data-i18n="cat_web">Full-stack</span>
+            </div>
+            <h3 data-i18n="cin_title">Réservation de cinéma</h3>
+            <p class="card__desc" data-i18n="cin_desc">Application web de réservation de billets : API REST JSON + pages rendues côté serveur.</p>
+            <ul class="list list--sm">
+              <li data-i18n="cin_b1">Authentification <strong>JWT</strong>, rôles client / admin.</li>
+              <li data-i18n="cin_b2">CRUD films, salles, séances ; réservations et annulation.</li>
+              <li data-i18n="cin_b3">Ma contribution : pagination, page « Mes réservations », vues admin.</li>
+            </ul>
+            <div class="chips chips--sm"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MySQL</span><span class="chip">EJS</span></div>
+            <a class="card__link" href="https://github.com/VivanBoy/cinema-reservation" target="_blank" rel="noopener"><span data-i18n="btn_repo_short">Code</span> ↗</a>
+          </article>
+        </div>
+
+        <p class="more">
+          <span data-i18n="more_text">Aussi sur mon GitHub : laboratoires Git/GitHub, GitHub Pages et suivi d'expériences ML.</span>
+          <a href="https://github.com/VivanBoy?tab=repositories" target="_blank" rel="noopener" data-i18n="more_link">Tous les dépôts ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">02</p>
+          <h2 data-i18n="skills_title">Compétences</h2>
+          <p class="section__sub" data-i18n="skills_sub">Les outils que j'utilise réellement dans mes projets.</p>
+        </header>
+
+        <div class="skills">
+          <div class="skill">
+            <h3 data-i18n="sk_ai">IA générative &amp; NLP</h3>
+            <p>RAG · FAISS · Sentence-Transformers · Ollama · llama.cpp · QLoRA / PEFT · Hugging Face · Gradio</p>
+          </div>
+          <div class="skill">
+            <h3 data-i18n="sk_ml">Machine learning &amp; deep learning</h3>
+            <p>scikit-learn · LightGBM · TensorFlow / Keras · RNN / GRU · séries temporelles · traitement audio (MFCC)</p>
+          </div>
+          <div class="skill">
+            <h3 data-i18n="sk_data">Données</h3>
+            <p>Python · pandas · NumPy · SQL / MySQL · Jupyter · EDA &amp; visualisation · Streamlit</p>
+          </div>
+          <div class="skill">
+            <h3 data-i18n="sk_ops">API, déploiement &amp; MLOps</h3>
+            <p>FastAPI · Docker · Google Cloud Run · DVC · MLflow · Git / GitHub</p>
+          </div>
+          <div class="skill">
+            <h3 data-i18n="sk_web">Développement web</h3>
+            <p>JavaScript · Node.js · Express · Sequelize · EJS · HTML / CSS · Java</p>
+          </div>
+          <div class="skill">
+            <h3 data-i18n="sk_soft">Façon de travailler</h3>
+            <p data-i18n="sk_soft_p">Travail d'équipe (branches, PR, issues) · documentation claire · cahier des charges &amp; gouvernance de projet · bilingue FR / EN</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
+    <!-- JOURNEY -->
+    <section class="section" id="journey">
       <div class="container">
-        <div class="section-head">
-          <h2 data-i18n="education_title">Education</h2>
-          <p class="muted" data-i18n="education_sub">Where I study and what I focus on.</p>
-        </div>
+        <header class="section__head">
+          <p class="eyebrow">03</p>
+          <h2 data-i18n="journey_title">Parcours</h2>
+          <p class="section__sub" data-i18n="journey_sub">Formation et étapes clés.</p>
+        </header>
 
-        <div class="panel">
-          <h3 class="panel__title">La Cité collégiale</h3>
-          <p class="muted" data-i18n="education_line">Student — AI / Software-related studies</p>
-        </div>
+        <ol class="timeline">
+          <li class="tl tl--now">
+            <div class="tl__when"><span data-i18n="tl_uqo_when">2026 — aujourd'hui</span></div>
+            <div class="tl__body">
+              <span class="badge badge--accent" data-i18n="badge_now">En cours</span>
+              <h3>Université du Québec en Outaouais (UQO)</h3>
+              <!-- Précise ici le nom exact de ton programme (ex. : Baccalauréat en ...) -->
+              <p class="tl__prog" data-i18n="tl_uqo_prog">Études universitaires · Gatineau</p>
+              <p data-i18n="tl_uqo_p">Je poursuis ma formation à l'université pour approfondir les fondements théoriques de l'informatique et de l'IA, en m'appuyant sur l'expérience pratique acquise au collège.</p>
+            </div>
+          </li>
+          <li class="tl">
+            <div class="tl__when"><span data-i18n="tl_cite_when">Diplômé · 2026</span></div>
+            <div class="tl__body">
+              <span class="badge" data-i18n="badge_done">Terminé</span>
+              <h3>La Cité collégiale</h3>
+              <p class="tl__prog" data-i18n="tl_cite_prog">Programme en intelligence artificielle · Ottawa</p>
+              <p data-i18n="tl_cite_p">Formation appliquée : apprentissage automatique, deep learning, IA générative, déploiement de solutions IA, programmation de serveurs web et outillage Git/GitHub. Projet de fin d'études : CityTaste.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section section--alt">
+    <section class="section section--alt" id="contact">
       <div class="container">
-        <div class="section-head">
-          <h2 data-i18n="contact_title">Contact</h2>
-          <p class="muted" data-i18n="contact_sub">Fastest: email or GitHub.</p>
-        </div>
-
-        <div class="contact">
-          <a class="btn" href="mailto:innocentvivan18@gmail.com">innocentvivan18@gmail.com</a>
-          <a class="btn btn--ghost" href="https://github.com/VivanBoy" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="cta">
+          <p class="eyebrow">04</p>
+          <h2 data-i18n="contact_title">Travaillons ensemble</h2>
+          <p class="section__sub" data-i18n="contact_sub">Stage, projet étudiant ou collaboration en IA&nbsp;: je suis ouvert aux opportunités dans la région d'Ottawa–Gatineau et à distance.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="mailto:innocentvivan18@gmail.com">innocentvivan18@gmail.com</a>
+            <a class="btn btn--lg" href="https://github.com/VivanBoy" target="_blank" rel="noopener">github.com/VivanBoy ↗</a>
+          </div>
         </div>
       </div>
     </section>
@@ -259,13 +342,9 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="muted">© <span id="year"></span> Innocent Niyobuhungiro</p>
-      <p class="muted">Built with GitHub Pages</p>
+      <p>© <span id="year">2026</span> Innocent Niyobuhungiro</p>
+      <p data-i18n="footer_built">Conçu à la main · hébergé sur GitHub Pages</p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

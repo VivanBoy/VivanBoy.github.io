@@ -1,7 +1,13 @@
 # VivanBoy.github.io
 
-Personal portfolio website for **Innocent Niyobuhungiro**.
+Portfolio personnel d'**Innocent Niyobuhungiro** — étudiant à l'UQO, diplômé du programme en intelligence artificielle de La Cité collégiale.
 
-Live site: https://vivanboy.github.io
+Site : https://vivanboy.github.io
 
-Main project: https://github.com/VivanBoy/cinema-reservation
+## Contenu
+- Projet vedette : [CityTaste](https://github.com/VivanBoy/CITYTASTE) (projet de fin d'études)
+- Autres projets : [assistant-rag](https://github.com/VivanBoy/assistant-rag), [voice-commands-gru](https://github.com/VivanBoy/voice-commands-gru), [SmartStock](https://github.com/VivanBoy/SmartStock), [project_ua2_api](https://github.com/VivanBoy/project_ua2_api), [cinema-reservation](https://github.com/VivanBoy/cinema-reservation)
+
+## Technique
+Site statique (HTML/CSS/JS, sans dépendance), bilingue FR/EN, thème clair/sombre, hébergé sur GitHub Pages.
+Le texte français est dans `index.html` ; la traduction anglaise est dans `script.js` (objet `EN`, mêmes clés que les attributs `data-i18n`).
